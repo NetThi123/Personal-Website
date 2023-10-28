@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body {
-            margin: 10px;
+            margin: 0;
             font-family: "Courier New", Courier, monospace;
             background-color: rgb(0, 0, 0);
             }
@@ -19,7 +19,7 @@
             }
 
             .topnav a {
-            float: center;
+            float: left;
             color: #000000;
             text-align: center;
             padding: 14px 16px;
@@ -38,7 +38,7 @@
             }
 
             .topnav input[type=text] {
-            float: center;
+            float: right;
             padding: 6px;
             margin-top: 8px;
             margin-right: 16px;
@@ -47,13 +47,13 @@
             font-family: "Courier New", Courier, monospace;
             }
 
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: 600px) {
             .topnav a, .topnav input[type=text] {
-                float: center;
+                float: none;
                 display: block;
                 text-align: left;
                 width: 100%;
-                margin: 10px;
+                margin: 0;
                 padding: 14px;
             }
             
