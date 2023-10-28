@@ -12,7 +12,11 @@
             font-family: "Courier New", Courier, monospace;
             background-color: rgb(0, 0, 0);
             }
-
+            body1 {
+                margin: 10;
+                font-family: "Courier New", Courier, monospace;
+                background-color: rgb(0,0,0);
+            }
             .topnav {
             overflow: hidden;
             background-color: rgb(255, 255, 255);
@@ -84,6 +88,25 @@
             background-position: center;
             background-repeat: no-repeat;
             }
+            
+            /* Style for the outer container */
+            .scroll-container {
+             width: 1000px; /* Set the desired width */
+             height: 800px; /* Set the desired height */
+             overflow-x: scroll; /* Enable horizontal scrollbar */
+             overflow-y: scroll; /* Enable vertical scrollbar */
+             border: 1px solid #ccc; /* Add a border for visualization */
+             padding: 10px; /* Add padding for content */
+             }
+             /* Style for the textarea */
+             .scroll-content {
+             width: 100%; /* Occupy full width of the container */
+             height: 100%; /* Occupy full height of the container */
+             resize: none; /* Disable textarea resizing */
+             border: none; /* Remove textarea border */
+             padding: 10px; /* Add padding for content */
+             background-color: #f0f0f0; /* Add a background color to the content */
+             } 
         </style>
     </head>
     <body>
@@ -101,9 +124,21 @@
             </nav>
         </header>
     </body>
-    <body>
-    </br>
-</br>
-</br>
-    </body>
+    <body1>
+    <div class="scroll-container">
+          <textarea class="scroll-content" readonly>
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
+            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.  
+          </textarea>
+        </div>
+    </body1>
 </html>
