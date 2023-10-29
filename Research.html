@@ -84,40 +84,11 @@
             background-position: center;
             background-repeat: no-repeat;
             }
-            
-            /* Style for the outer container */
-            .scroll-container {
-             margin: 125;   
-             width: 70%; /* Set the desired width */
-             height: 400px; /* Set the desired height */
-             overflow-x: scroll; /* Enable horizontal scrollbar */
-             overflow-y: scroll; /* Enable vertical scrollbar */
-             border: 1px solid #ccc; /* Add a border for visualization */
-             padding: 10px; /* Add padding for content */
-             background-color: white;
-             resize: both; /* Disable textarea resizing */                
-             }
-             /* Style for the textarea */
-             .scroll-content {
-             width: 100%; /* Occupy full width of the container */
-             height: 100%; /* Occupy full height of the container */
-             border: none; /* Remove textarea border */
-             padding: 10px; /* Add padding for content */
-             background-color: white;
-             font-family: "Calibri", Calibri, monospace;
-             font-size: 20px;
-             text-align: left;   
-             resize: none;
-             overflow-x: auto; /* Enable horizontal scrollbar */
-             overflow-y: auto; /* Enable vertical scrollbar */
-             } 
-             .title {
-             font-size: 24px;
-             font-weight: bold;
-             color: red;
-             margin-center: 10px;
-             text-align: center;        
-             }            
+            .container {
+            width: 600px; /* Set the width of the container */
+            height: 400px; /* Set the height of the container */
+            border: 1px solid #ccc; /* Add a border for better visualization */
+            }            
         </style>
     </head>
     <body>
@@ -134,21 +105,8 @@
                 </div>
             </nav>
         </header>
-    <div class="scroll-container">
-          <h2 class="title">Research Title</h2>    
-          <textarea class="scroll-content" readonly>
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.
-            This is a sample text that can be very long, causing both horizontal and vertical scrollbars to appear when needed.  
-          </textarea>
-        </div>
+    <div class="container">
+  <iframe src="Research Paper.pdf" width="100%" height="100%" frameborder="0"></iframe>
+</div>
     </body>    
 </html>
