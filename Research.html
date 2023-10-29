@@ -88,21 +88,16 @@
             background-repeat: no-repeat;
         }
 
-        .container {
-            width: 900px;
-            /* Set the width of the container */
-            height: 80vh;
-            /* Set a flexible height (80% of the viewport height) */
-            border: 3px solid #ccc;
-            /* Add a border for better visualization */
-            text-align: center;
+        .pdf-container {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 80vh; /* Center vertically within the viewport */
         }
 
         iframe {
             width: 100%;
+            max-width: 900px; /* Limit the maximum width of the PDF */
             height: 100%;
         }
     </style>
@@ -121,7 +116,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="pdf-container">
         <iframe src="Research Paper.pdf" frameborder="0"></iframe>
     </div>
 </body>
