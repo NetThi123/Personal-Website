@@ -223,7 +223,7 @@ header {
 
 #projects .squares-container {
     padding-top: 3rem;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 #projects .square {
@@ -330,15 +330,16 @@ header {
     display: flex;
     justify-content: left;
     align-items: left;
-    height: 80vh; /* Center vertically within the viewport */
-    margin-left: 2rem; 
-    margin-right:15rem; 
+    width: 36rem; 
+    height: 41.5vh; /* Center vertically within the viewport */
+    border-radius:5px;
+    border: 2px solid #6a1e55; 
 }
 
 iframe {
     width: 100%;
     max-width: 50rem; /* Limit the maximum width of the PDF */
-    height: 28rem;
+    height: 18rem;
 }
 
 /* Contact Section */
