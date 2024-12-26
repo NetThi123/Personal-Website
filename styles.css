@@ -223,12 +223,16 @@ header {
 
 #projects .squares-container {
     padding-top: 3rem;
-    gap: 8rem;
+    gap: 6rem;
 }
 
 #projects .square {
-    width: 80%;
-    height: 35rem;
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center all children horizontally */
+    width: 45%;
+    height: 30rem;
     background-color: #282828;
     border: 2px solid #6a1e55;
     border-radius: 7px;
@@ -238,6 +242,88 @@ header {
 #projects .square h3 {
     font-size: 1.5rem;
     color: #FFFFFF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#projects .square a{
+    text-decoration: none; 
+    color: #FFFFFF;
+}
+
+#projects .square p{
+    font-size: 1rem; 
+    background-color: #282828;
+    text-align: center; 
+    margin-top: 1rem;
+    margin-left: 1.25rem; 
+    margin-right: 1.25rem; 
+}
+
+#projects .square a button {
+    text-align: center;
+    background-color: #8c5078;
+    color: #FFFFFF;
+    font-family: 'Open Sans', serif;
+    width: 7rem;
+    height: auto;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem; 
+    margin-top: 1rem; 
+}
+
+#projects .square a button:hover{
+    background-color: #ad809d;
+    cursor: pointer; 
+}
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 90%; /* Adjust width as needed */
+    margin: 0rem auto;
+    overflow: hidden; /* Hide overflowing images */
+    border: 2px solid #6a1e55;
+    border-radius: 5px;
+}
+
+/* Images Container */
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth sliding effect */
+}
+
+/* Individual Images */
+.carousel-item {
+    min-width: 100%; /* Each image takes up full width of the carousel */
+    height: 18rem;
+}
+
+/* Navigation Buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 1rem; /* Position on the left */
+}
+
+.carousel-button.next {
+    right: 1rem; /* Position on the right */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
 }
 
 .pdf-container {
