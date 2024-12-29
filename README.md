@@ -5,3 +5,4 @@ TODO list:
 - get the messaging section in contact section to function (take in message and send to mail box)
 - fix general css 
 https://colorffy.com/dark-theme-generator?colors=680c58-121212
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
